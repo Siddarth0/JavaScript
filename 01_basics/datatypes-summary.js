@@ -19,3 +19,26 @@ const myFunction = function(){
 }
 
 console.log(typeof myFunction)
+
+// *****************Stack(primitive) , Heap(Non-primitive)
+
+let myName = "Siddarth"
+
+let anotherName = myName
+anotherName = "Idontknow"
+
+console.log(myName);
+console.log(anotherName);
+
+let user1 = {
+    email: "user@gmsil.com",
+    payment: "Banking"
+}
+
+let user2 = user1
+
+user2.email = "sid@gmasil.com"
+
+console.log(user1.email);
+console.log(user2.email);
+
